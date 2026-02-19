@@ -10,10 +10,9 @@ for(let i=0;i<marks.length;i++)
    let marksOfStudent : number = marks[i];
    marksOfStudent += 10;//assignment operator used.
     console.log(students[i] +" Marks is "+ marksOfStudent);
-    //newMarks.push(marksOfStudent);
+   //Assigning the marks of students with 10.
     newMarks.add(marksOfStudent);
 }
-
   let marksArray: number[] = Array.from(newMarks);
 let sum: number = 0;
 for (let i = 0; i < marksArray.length; i++) {
