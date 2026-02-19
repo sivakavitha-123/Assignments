@@ -3,7 +3,7 @@
 //creating array for students names:
 let students: Array<string> = ["Suresh","Mahesh","Naresh"];
 let marks: Array<number> = [75, 80, 82];
-let newMarks = new Set();
+let newMarks: Set<number> = new Set<number>();
 //adding 10 marks to each stundent.
 for(let i=0;i<marks.length;i++)
 {
@@ -13,9 +13,14 @@ for(let i=0;i<marks.length;i++)
     //newMarks.push(marksOfStudent);
     newMarks.add(marksOfStudent);
 }
+
+  let marksArray: number[] = Array.from(newMarks);
+let sum: number = 0;
+for (let i = 0; i < marksArray.length; i++) {
+    sum += marksArray[i];
+}
 //average marks of studnets:
-  
-//let averageMarks: number =  
-console.log("Average value of marks"+" "+ newMarks);
+let averageMarks: number = sum / marksArray.length;  
+console.log("Average value of marks"+" "+ averageMarks);
 
 
