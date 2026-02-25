@@ -9,13 +9,13 @@ for (let i = 0; i < SplitSent.length; i++)
     {
         count ++;
       
-     let Firstletter = SplitSent[i].charAt(0).toUpperCase() + SplitSent[i].slice(1);
+     let FirstlettCap = SplitSent[i].charAt(0).toUpperCase();
+     let AfterFirstlettCap = FirstlettCap+ SplitSent[i].slice(1);
+     
         //Convert the first character of each word to uppercase and print original sentence.
-        console.log("Original sentence with first letter of each word capitalized: " + Firstletter);
-      
+      console.log("first character of each word to uppercase and print original sentence :"+ AfterFirstlettCap);
     }
     console .log (" Count of the word in the sentence is : "+ count);
-  
    
 //2 nd type of approach that find the count.
  let countOfWord : number = SplitSent.length;
