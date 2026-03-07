@@ -4,6 +4,11 @@ let rows: number =5;
 for (let i=0;i<rows;i++)
 {
     let star: string = "";
+for (let j:number=i;j<n;j++)
+{
+    star+="";
+}
+
     for (let j=0;j<=i;j++)
     {
         star += "*";
