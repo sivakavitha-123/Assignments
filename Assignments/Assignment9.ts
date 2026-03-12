@@ -3,7 +3,16 @@
 let rows: number =5;
 for (let i=0;i<rows;i++)
 {
-    let star: string = "";
+    let star: string = " ";
+
+
+
+
+
+
+
+
+
     for (let j=0;j<=i;j++)
     {
         star += "*";
