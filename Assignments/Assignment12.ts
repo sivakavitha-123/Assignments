@@ -3,25 +3,19 @@
 //Input: x = 2.00000, n = 10
 //Output: 1024.00000
 
-let i :number = 3;
+let i: number = -2;
 let x: number = 5;
+let result: number = 1;
 
-if (i<0){
-    x=1/x;
-    i=-i;
-  for(let j=0; j<i;j++){
-     x*=x;
-     console.log(x);
-  }
-
-  if(i===0){
-    console.log(1);
-  }
-   
-
-
-
-
+if (i < 0) {
+    x = 1 / x;
+    i = -i;
 }
 
+for (let j = 0; j < i; j++) {
+    result *= x;
+}
+
+console.log(result);
+   
 
